@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Routine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .exercise-card {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .exercise-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 12px -3px rgba(0, 0, 0, 0.07), 0 3px 7px -3px rgba(0, 0, 0, 0.04); /* Softer shadow for light theme */
+        }
+        .day-header {
+            border-bottom: 2px solid #d1d5db; /* Tailwind gray-300 */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        /* Custom scrollbar for better aesthetics - works well with light themes too */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f9fafb; /* Lighter track for white bg */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1; /* Lighter thumb */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #9ca3af; /* Darker on hover */
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800 min-h-screen p-4 sm:p-8">
+    <div class="container mx-auto max-w-4xl">
+
+        <header class="text-center mb-10">
+            <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Your Workout Plan</h1>
+            <p class="text-gray-600 text-lg">Focus on Definition & Strength Maintenance</p>
+        </header>
+
+        <section class="mb-8 p-6 bg-gray-50 rounded-xl shadow-lg">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-700">Primary Focus</h2>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li><strong>Muscle Endurance & "Tone":</strong> Achieved through higher rep ranges and shorter rest periods.</li>
+                <li><strong>Strength Maintenance:</strong> Lifting challenging weights to preserve muscle mass during a caloric deficit.</li>
+                <li>Incorporates "Advanced 5 Day Workout Plan" principles, emphasizing "Definition" parameters and ATG/Knee exercises for joint health and mobility.</li>
+            </ul>
+        </section>
+
+        <section class="mb-8 p-6 bg-gray-50 rounded-xl shadow-lg">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-700">5-Day Workout & Basketball Split</h2>
+            <ol class="list-decimal list-inside space-y-2 text-gray-700">
+                <li>Day 1: Upper Body Focus (Strength Maintenance & Definition)</li>
+                <li>Day 2: Lower Body Focus (Strength Maintenance & Definition)</li>
+                <li>Day 3: Basketball (Active Recovery / Cardio)</li>
+                <li>Day 4: Upper Body Focus (Strength Maintenance & Definition)</li>
+                <li>Day 5: Basketball + Full Body Athleticism & Conditioning</li>
+                <li>Day 6 & 7: Rest / Active Recovery</li>
+            </ol>
+        </section>
+
+        <section class="mb-8 p-6 bg-gray-50 rounded-xl shadow-lg">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-700">General Prep</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-700">Warm-up (5-10 mins before lifting)</h3>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700">
+                        <li>Light Cardio: 5 minutes.</li>
+                        <li>Dynamic Stretches.</li>
+                        <li><strong>ATG-Inspired Mobility Prep:</strong>
+                            <ul class="list-disc list-inside ml-4 space-y-1">
+                                <li>Tibialis Raises: 2 sets x 20-25 reps.</li>
+                                <li>KOT Calf Raises: 1 set to failure (aim for 20-25+).</li>
+                                <li>Patrick Steps: 1 set x 15-20 reps per leg.</li>
+                                <li>Elephant Walks: 10-15 "steps" per leg.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-700">Abdominal Work</h3>
+                    <p class="text-gray-700 mb-2">Choose 2-3 exercises, 3 sets each. Perform after workouts or as active rest. Focus on controlled movements, 30-45 sec rest between ab sets.</p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700">
+                        <li>Flat Bench Rollups (20 reps)</li>
+                        <li>Hanging Leg Raises (20 reps)</li>
+                        <li>Ab Crunch Machine (15-20 reps)</li>
+                        <li>Planks (hold for time)</li>
+                        <li>L-Sits (hold for time, aim for 20-30 sec)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="space-y-10">
+
+            <section class="p-6 bg-gray-50 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold day-header text-gray-800">Day 1: Upper Body Push</h2>
+                <p class="mb-6 text-gray-600">Chest, Shoulders, Triceps - Definition & Strength Maintenance</p>
+                <div class="space-y-6">
+                    <div class="exercise-card p-4 bg-white border border-gray-200 rounded-lg shadow-md">
+                        <h4 class="font-semibold text-lg text-gray-800">Barbell Bench Press</h4>
+                        <p class="text-sm text-gray-600">Sets: 1-2 warm-up, 3 working | Reps: 8-10 (challenging) | Rest: 90-120s</p>
+                    </div>
+                    <div class="exercise-card p-4 bg-white border border-gray-200 rounded-lg shadow-md">
+                        <h4 class="font-semibold text-lg text-gray-800">Incline Dumbbell Press</h4>
+                        <p class="text-sm text-gray-600">Sets: 3 | Reps: 10-12 | Rest: 75-90s</p>
+                    </div>
+                    <div class="exercise-card p-4 bg-white border border-gray-200 rounded-lg shadow-md">
+                        <h4 class="font-semibold text-lg text-gray-800">Overhead Press (Barbell or Dumbbell)</h4>
+                        <p class="text-sm text-gray-600">Sets: 3 | Reps: 8-10 | Rest: 90-120s</p>
+                    </div>
+                    <div class="exercise-card p-4 bg-gray-100 border border-gray-200 rounded-lg shadow-md">
+                        <h4 class="font-semibold text-lg text-gray-700">Superset (Definition Focus):</h4>
+                        <p class="text-sm text-gray-600">A1: Dumbbell Lateral Raises: 3 sets x 12-15 reps</p>
+                        <p class="text-sm text-gray-600">A2: Dumbbell Front Raises: 3 sets x 12-15 reps</p>
+                        <p class="text-sm text-gray-600">Rest: 60s after completing both A1 and A2.</p>
+                    </div>
+                    <div class="exercise-card p-4 bg-white border border-gray-200 rounded-lg shadow-md">
+                        <h4 class="font-semibold text-lg text-gray-800">Weighted Dips (or Close-Grip Push-ups)</h4>
+                        <p class="text-sm text-gray-600">Sets: 3 | Reps: 10-15 (or to failure for push-ups) | Rest: 75s</p>
+                    </div>
+                    <div class="exercise-card p-4 bg-white border border-gray-200 rounded-lg shadow-md">
+                        <h4 class="font-semibold text-lg text-gray-800">Triceps Pushdowns (Rope or Bar - Definition)</h4>
+                        <p class="text-sm text-gray-600">Sets: 3 | Reps: 15-20 (focus on squeeze) | Rest: 60s</p>
+                    </div>
+                    <p class="text-gray-700 mt-4"><strong>Ab Work:</strong> As detailed in General Prep.</p>
+                    <p class="text-gray-700"><strong>Cool-down (5 min):</strong> Static stretches. Pigeon Pose (1 min/side).</p>
+                </div>
+            </section>
+
+            <section class="p-6 bg-gray-50 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold day-header text-gray-800">Day 2: Lower Body</h2>
+                <p class="mb-6 text-gray-600">Strength Maintenance, Definition, Knee Health</p>
+                <div class="space-y-6">
+                    <div class="exercise-card p-4 bg-white border border-gray-200 rounded-lg shadow-md">
+                        <h4 class="font-semibold text-lg text-gray-800">Barbell Squats</h4>
+                        <p class="text-sm text-gray-600">Sets: 1-2 warm-up, 3 working | Reps: 8-12 (good depth & control) | Rest: 90-120s</p>
+                    </div>
+                    <div class="exercise-card p-4 bg-white border border-gray-200 rounded-lg shadow-md">
+                        <h4 class="font-semibold text-lg text-gray-800">ATG Split Squats</h4>
+                        <p class="text-sm text-gray-600">Sets: 3 per leg | Reps: 8-12 per leg (bodyweight or light DBs, focus on ROM) | Rest: 60-75s</p>
+                    </div>
+                    <div class="exercise-card p-4 bg-white border border-gray-200 rounded-lg shadow-md">
+                        <h4 class="font-semibold text-lg text-gray-800">Romanian Deadlifts (RDLs)</h4>
+                        <p class="text-sm text-gray-600">Sets: 3 | Reps: 10-12 (hamstring stretch, glute contraction) | Rest: 90s</p>
+                    </div>
+                    <div class="exercise-card p-4 bg-white border border-gray-200 rounded-lg shadow-md">
+                        <h4 class="font-semibold text-lg text-gray-800">Leg Press (Definition)</h4>
+                        <p class="text-sm text-gray-600">Sets: 3 | Reps: 15-20 | Rest: 75s</p>
+                    </div>
+                    <div class="exercise-card p-4 bg-white border border-gray-200 rounded-lg shadow-md">
+                        <h4 class="font-semibold text-lg text-gray-800">Weighted Hip Flexor Raise</h4>
+                        <p class="text-sm text-gray-600">Sets: 3 per leg | Reps: 12-15 (controlled) | Rest: 60s</p>
+                    </div>
+                    <div class="exercise-card p-4 bg-white border border-gray-200 rounded-lg shadow-md">
+                        <h4 class="font-semibold text-lg text-gray-800">Lying Leg Curls (Hamstring Definition)</h4>
+                        <p class="text-sm text-gray-600">Sets: 3 | Reps: 15-18 | Rest: 60s</p>
+                    </div>
+                    <div class="exercise-card p-4 bg-white border border-gray-200 rounded-lg shadow-md">
+                        <h4 class="font-semibold text-lg text-gray-800">Standing Calf Raises (Definition)</h4>
+                        <p class="text-sm text-gray-600">Sets: 3-4 | Reps: 15-25 (squeeze at top) | Rest: 45-60s</p>
+                    </div>
+                    <p class="text-gray-700 mt-4"><strong>Ab Work:</strong> As detailed in General Prep.</p>
+                    <p class="text-gray-700"><strong>Cool-down (5-10 min):</strong> Static stretches. Jefferson Curl, Pigeon Pose.</p>
+                </div>
+            </section>
+
+            <section class="p-6 bg-gray-50 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold day-header text-gray-800">Day 3: Basketball</h2>
+                <p class="text-gray-700">Enjoy the game!</p>
+                <p class="text-gray-700 mt-2"><strong>Optional Post-Basketball:</strong> Light core, ATG mobility (Tibialis Raises, KOT Calf Raises), foam roll.</p>
+            </section>
+
+            <section class="p-6 bg-gray-50 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold day-header text-gray-800">Day 4: Upper Body Pull</h2>
+                <p class="mb-6 text-gray-600">Back, Biceps, Rear Delts - Definition & Strength Maintenance</p>
+                <div class="space-y-6">
+                    <div class="exercise-card p-4 bg-white border border-gray-200 rounded-lg shadow-md">
+                        <h4 class="font-semibold text-lg text-gray-800">Deadlifts (Moderate weight)</h4>
+                        <p class="text-sm text-gray-600">Sets: 1-2 warm-up, 2-3 working | Reps: 8-10 (focus on form, glute/hamstring drive) | Rest: 120s</p>
+                        <p class="text-xs text-gray-500 mt-1">Alternatively: Kettlebell Deadlifts (higher rep) or heavy Kettlebell Swings if deadlifts are too taxing.</p>
+                    </div>
+                    <div class="exercise-card p-4 bg-white border border-gray-200 rounded-lg shadow-md">
+                        <h4 class="font-semibold text-lg text-gray-800">Pull-ups (or Lat Pulldowns)</h4>
+                        <p class="text-sm text-gray-600">Sets: 3-4 | Reps: 8-12 (or to failure, use assistance if needed) | Rest: 90s</p>
+                    </div>
+                    <div class="exercise-card p-4 bg-white border border-gray-200 rounded-lg shadow-md">
+                        <h4 class="font-semibold text-lg text-gray-800">Barbell Rows (or Dumbbell Rows)</h4>
+                        <p class="text-sm text-gray-600">Sets: 3 | Reps: 10-12 | Rest: 75-90s</p>
+                    </div>
+                     <div class="exercise-card p-4 bg-gray-100 border border-gray-200 rounded-lg shadow-md">
+                        <h4 class="font-semibold text-lg text-gray-700">Superset (Definition Focus):</h4>
+                        <p class="text-sm text-gray-600">A1: Seated Cable Rows (Neutral Grip): 3 sets x 12-15 reps</p>
+                        <p class="text-sm text-gray-600">A2: Face Pulls: 3 sets x 15-20 reps</p>
+                        <p class="text-sm text-gray-600">Rest: 60s after completing both A1 and A2.</p>
+                    </div>
+                    <div class="exercise-card p-4 bg-white border border-gray-200 rounded-lg shadow-md">
+                        <h4 class="font-semibold text-lg text-gray-800">Barbell Curls</h4>
+                        <p class="text-sm text-gray-600">Sets: 3 | Reps: 10-12 | Rest: 75s</p>
+                    </div>
+                    <div class="exercise-card p-4 bg-white border border-gray-200 rounded-lg shadow-md">
+                        <h4 class="font-semibold text-lg text-gray-800">Alternating Dumbbell Hammer Curls (or Incline DB Curls)</h4>
+                        <p class="text-sm text-gray-600">Sets: 3 | Reps: 12-15 per arm | Rest: 60s</p>
+                    </div>
+                    <p class="text-gray-700 mt-4"><strong>Ab Work:</strong> As detailed in General Prep.</p>
+                    <p class="text-gray-700"><strong>Cool-down (5 min):</strong> Static stretches.</p>
+                </div>
+            </section>
+
+            <section class="p-6 bg-gray-50 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold day-header text-gray-800">Day 5: Basketball + Full Body Athleticism & Conditioning</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-700">Part 1: Basketball</h3>
+                        <p class="text-gray-700">Enjoy the game!</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-700">Part 2: Post-Basketball Circuit/Conditioning</h3>
+                        <p class="text-gray-600 text-sm mb-2">Minimize rest between exercises, 60-90s rest between rounds. Aim for 2-3 rounds.</p>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700">
+                            <li>ATG Deep Squats (Bodyweight or Goblet Squat): 15-20 reps</li>
+                            <li>Kettlebell Swings (or Dumbbell Swings): 20-25 reps</li>
+                            <li>Push-ups (any variation): Max reps (aim for 15+)</li>
+                            <li>Inverted Rows (or Renegade Rows with DBs): 12-15 reps</li>
+                            <li>Walking Lunges: 10-12 reps per leg</li>
+                            <li>Plank: Hold for 45-60 seconds</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-700">ATG Mobility Cool-down:</h3>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700">
+                        <li>Pigeon Pose: 1-2 minutes per side.</li>
+                        <li>L-Sits: 2-3 sets to max hold.</li>
+                        <li>Jefferson Curl: 1 set, slow and controlled.</li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+
+        <section class="mt-10 mb-8 p-6 bg-gray-50 rounded-xl shadow-lg">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-700">Implementing "Evaluate Each Set" (Adjusted for Definition)</h2>
+            <div class="space-y-3 text-gray-700">
+                <p><strong>For your 8-12 rep compound lifts:</strong> Focus on maintaining a challenging weight where the last couple of reps are tough but form is perfect. If you can easily do more than 12, consider a small weight increase next time.</p>
+                <p><strong>For your 12-20+ rep definition lifts:</strong> If it felt easy and you hit the top end of the rep range, increase weight slightly for the next workout. If it was challenging and you were in the middle of the rep range, aim to add 1-2 reps next time with the same weight. Prioritize the "burning feeling" and controlling the negative.</p>
+            </div>
+        </section>
+
+        <footer class="text-center mt-12 mb-6">
+            <p class="text-gray-500 text-sm">Stay consistent and listen to your body. Good luck!</p>
+        </footer>
+
+    </div>
+    <script>
+        // Placeholder for any future JavaScript functionality
+        console.log("Workout plan loaded successfully with clean theme!");
+    </script>
+</body>
+</html>
